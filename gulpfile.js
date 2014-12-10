@@ -60,4 +60,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['js']);
 });
 
-gulp.task('default', ['sass', 'js']);
+gulp.task('default', ['sass', 'js', 'libs']);
