@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-var api = "http://localhost:8080";
+var api = "http://boucaine-api.herokuapp.com";
 
 angular.module('starter', ['ionic', 'restangular'])
 
