@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic'])
 
-.controller('ScanCtrl', ['$scope', require('./controllers/scan.js')])
+.controller('ScanCtrl', ['$scope', '$ionicLoading', require('./controllers/scan.js')])
 .controller('ContactCtrl', ['$scope', require('./controllers/contact.js')])
 .controller('MenuCtrl', ['$scope', require('./controllers/menu.js')])
 

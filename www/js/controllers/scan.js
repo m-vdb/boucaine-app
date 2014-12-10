@@ -1,10 +1,13 @@
-module.exports = function ($scope) {
+module.exports = function ($scope, $ionicLoading) {
   $scope.startScan = function () {
-    $scope.loader = "Scanning...";
+    $ionicLoading.show({
+      template: 'Scan en cours...'
+    });
     cordova.plugins.barcodeScanner.scan(function (result) {
+      $ionicLoading.hide();
       $scope.result = result.text;
-      $scope.loader = "Done.";
     }, function (error) {
+      $ionicLoading.hide();
       $scope.loader = "Error.";
     });
   };
