@@ -5,9 +5,13 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic'])
 
-.controller('ScanCtrl', ['$scope', '$ionicLoading', require('./controllers/scan.js')])
+var api = "http://localhost:8080";
+
+angular.module('starter', ['ionic', 'restangular'])
+
+.factory('verifyCode', ['Restangular', require('./services/verifyCode.js')])
+.controller('ScanCtrl', ['$scope', '$ionicLoading', 'verifyCode', require('./controllers/scan.js')])
 .controller('ContactCtrl', ['$scope', require('./controllers/contact.js')])
 .controller('MenuCtrl', ['$scope', require('./controllers/menu.js')])
 
