@@ -11,7 +11,8 @@ var api = "http://boucaine-api.herokuapp.com";
 angular.module('starter', ['ionic', 'restangular'])
 
 .factory('verifyCode', ['Restangular', require('./services/verifyCode.js')])
-.controller('ScanCtrl', ['$scope', '$ionicLoading', 'verifyCode', require('./controllers/scan.js')])
+.factory('popins', ['$ionicPopup', require('./services/popins.js')])
+.controller('ScanCtrl', ['$scope', '$ionicLoading', 'verifyCode', 'popins', require('./controllers/scan.js')])
 .controller('ContactCtrl', ['$scope', require('./controllers/contact.js')])
 .controller('MenuCtrl', ['$scope', require('./controllers/menu.js')])
 
