@@ -1,4 +1,7 @@
-module.exports = function ($scope, $ionicLoading, verifyCode, popins) {
+module.exports = function ($scope, $ionicLoading, verifyCode, popins, count) {
+
+  $scope.count = count.get();
+
   $scope.startScan = function () {
     $ionicLoading.show({
       template: 'Scan en cours...'
@@ -9,6 +12,7 @@ module.exports = function ($scope, $ionicLoading, verifyCode, popins) {
         $ionicLoading.hide();
         var s = (code.number > 1) ? "s" : "";
         popins.alert.success("Scan réussi !", "Vous venez d'ajouter " + code.number + " pizza" + s + ".");
+        $scope.count = count.increment(code.number);
       }).fail(function (xhr) {
         $ionicLoading.hide();
         var msg = (xhr.data && xhr.data.message) ? xhr.data.message : "Une erreur est survenue, veuillez réessayer.";

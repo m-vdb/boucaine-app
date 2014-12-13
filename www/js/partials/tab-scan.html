@@ -1,5 +1,11 @@
 <ion-view title="Accueil">
   <ion-content class="padding">
+    <p>
+      <ng-pluralize count="count"
+                 when="{'one': 'Vous avez déjà commandé 1 pizza.',
+                        'other': 'Vous avez déjà commandé {} pizzas'}">
+      </ng-pluralize>
+    </p>
     <button class="button button-balanced" on-tap="startScan()">Scanner un QR Code</button>
   </ion-content>
 </ion-view>
