@@ -8,6 +8,9 @@ module.exports = function ($scope, $ionicLoading, verifyCode, popins, count, pro
     });
 
     cordova.plugins.barcodeScanner.scan(function (result) {
+      $ionicLoading.show({
+        template: 'Vérification en cours...'
+      });
       verifyCode(result.text).done(function (code) {
         var s = (code.number > 1) ? "s" : "",
             // increment the new count of pizzas
