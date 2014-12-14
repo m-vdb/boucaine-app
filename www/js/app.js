@@ -13,10 +13,11 @@ angular.module('starter', ['ionic', 'restangular'])
 /***** Constants *****/
 .constant('PROMO_GOAL', 10)
 /***** Services *****/
+.factory('Class', require('./services/inheritance.js'))
 .factory('promoCode', ['Restangular', require('./services/promoCode.js')])
 .factory('verifyCode', ['Restangular', require('./services/verifyCode.js')])
 .factory('popins', ['$ionicPopup', require('./services/popins.js')])
-.factory('store', ['$window', require('./services/store.js')])
+.factory('store', ['$window', 'Class', require('./services/store.js')])
 .factory('connectivity', require('./services/connectivity.js'))
 /***** Controllers *****/
 .controller('ScanCtrl', [
