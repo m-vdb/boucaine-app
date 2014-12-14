@@ -10,13 +10,20 @@ var api = "http://boucaine-api.herokuapp.com";
 
 angular.module('starter', ['ionic', 'restangular'])
 
+/***** Constants *****/
+.constant('PROMO_GOAL', 10)
+/***** Services *****/
+.factory('promoCode', ['Restangular', require('./services/promoCode.js')])
 .factory('verifyCode', ['Restangular', require('./services/verifyCode.js')])
 .factory('popins', ['$ionicPopup', require('./services/popins.js')])
 .factory('count', ['$window', require('./services/count.js')])
-.controller('ScanCtrl', ['$scope', '$ionicLoading', 'verifyCode', 'popins', 'count', require('./controllers/scan.js')])
+/***** Controllers *****/
+.controller('ScanCtrl', [
+  '$scope', '$ionicLoading', 'verifyCode',
+  'popins', 'count', 'promoCode', 'PROMO_GOAL', require('./controllers/scan.js')])
 .controller('ContactCtrl', ['$scope', require('./controllers/contact.js')])
 .controller('MenuCtrl', ['$scope', require('./controllers/menu.js')])
-
+/***** Run *****/
 .run(['$ionicPlatform', function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -30,7 +37,7 @@ angular.module('starter', ['ionic', 'restangular'])
     }
   });
 }])
-
+/***** Config *****/
 .config(['$stateProvider', '$urlRouterProvider',
   function($stateProvider, $urlRouterProvider) {
 

@@ -6,11 +6,11 @@ module.exports = function ($window) {
   }
 
   Store.prototype.get = function () {
-    return parseInt($window.localStorage.getItem(this.key) || 0, 10);
+    return parseInt(this.store.getItem(this.key) || 0, 10);
   };
 
   Store.prototype.set = function (value) {
-    return $window.localStorage.setItem(this.key, value);
+    return this.store.setItem(this.key, value);
   };
 
   Store.prototype.increment = function (value) {
