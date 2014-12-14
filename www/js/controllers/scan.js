@@ -1,6 +1,7 @@
 module.exports = function ($scope, $ionicLoading, verifyCode, popins, store, promoCode, connectivity, PROMO_GOAL) {
 
   $scope.count = store.count.get();
+  $scope.promo = store.promo.get();
 
   $scope.startScan = function () {
     if (!connectivity.ok()) {
@@ -40,6 +41,7 @@ module.exports = function ($scope, $ionicLoading, verifyCode, popins, store, pro
           promoCode(gain).done(function (code) {
             $ionicLoading.hide();
             popins.alert.success(title, promoMsg + code.hash);
+            $scope.promo = store.promo.append(code.hash);
           }).fail(function (xhr){
             // TODO: we need to make sure the client will have his promo code anyway
             console.log(xhr);
