@@ -1,8 +1,13 @@
-module.exports = function ($scope, $ionicLoading, verifyCode, popins, count, promoCode, PROMO_GOAL) {
+module.exports = function ($scope, $ionicLoading, verifyCode, popins, count, promoCode, connectivity, PROMO_GOAL) {
 
   $scope.count = count.get();
 
   $scope.startScan = function () {
+    if (!connectivity.ok()) {
+      popins.alert.error("Problème de réseau", "Vous devez être connecté (3G, Edge ou Wifi) pour pouvoir effectuer un scan.");
+      return;
+    }
+
     $ionicLoading.show({
       template: 'Scan en cours...'
     });

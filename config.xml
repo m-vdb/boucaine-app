@@ -16,4 +16,8 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+
+  <platform name="ios">
+    <plugin name="NetworkStatus" value="CDVConnection"/>
+  </platform>
 </widget>

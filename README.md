@@ -10,7 +10,7 @@ Install
 - `npm install -g ionic cordova`
 - `npm install .`
 - `ionic platform add ios`
-- `ionic plugin add com.phonegap.plugins.barcodescanner`
+- `ionic plugin add com.phonegap.plugins.barcodescanner org.apache.cordova.network-information`
 - `ionic build ios`
 - `ionic emulate ios` and you're ready!
 
