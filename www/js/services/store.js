@@ -1,7 +1,7 @@
 module.exports = function ($window) {
 
-  function Store () {
-    this.key = "b-count";
+  function Store (key) {
+    this.key = "bcn-" + key;
     this.store = $window.localStorage;
   }
 
@@ -19,5 +19,7 @@ module.exports = function ($window) {
     return newValue;
   };
 
-  return new Store();
+  return {
+    count: new Store("count"),
+    promo: new Store("promo")
 };

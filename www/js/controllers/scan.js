@@ -1,6 +1,6 @@
-module.exports = function ($scope, $ionicLoading, verifyCode, popins, count, promoCode, connectivity, PROMO_GOAL) {
+module.exports = function ($scope, $ionicLoading, verifyCode, popins, store, promoCode, connectivity, PROMO_GOAL) {
 
-  $scope.count = count.get();
+  $scope.count = store.count.get();
 
   $scope.startScan = function () {
     if (!connectivity.ok()) {
@@ -13,13 +13,17 @@ module.exports = function ($scope, $ionicLoading, verifyCode, popins, count, pro
     });
 
     cordova.plugins.barcodeScanner.scan(function (result) {
+      if (result.cancelled) {
+        $ionicLoading.hide();
+        return;
+      }
       $ionicLoading.show({
         template: 'Vérification en cours...'
       });
       verifyCode(result.text).done(function (code) {
         var s = (code.number > 1) ? "s" : "",
             // increment the new count of pizzas
-            newCount = count.increment(code.number),
+            newCount = store.count.increment(code.number),
             newPromoCount = Math.floor(newCount / PROMO_GOAL),
             prevPromoCount = Math.floor($scope.count / PROMO_GOAL),
             // compute the gain of promo (1 = 10 pizzas, 2 = 20 pizzas, etc...)

@@ -16,12 +16,12 @@ angular.module('starter', ['ionic', 'restangular'])
 .factory('promoCode', ['Restangular', require('./services/promoCode.js')])
 .factory('verifyCode', ['Restangular', require('./services/verifyCode.js')])
 .factory('popins', ['$ionicPopup', require('./services/popins.js')])
-.factory('count', ['$window', require('./services/count.js')])
+.factory('store', ['$window', require('./services/store.js')])
 .factory('connectivity', require('./services/connectivity.js'))
 /***** Controllers *****/
 .controller('ScanCtrl', [
   '$scope', '$ionicLoading', 'verifyCode',
-  'popins', 'count', 'promoCode', 'connectivity',
+  'popins', 'store', 'promoCode', 'connectivity',
   'PROMO_GOAL', require('./controllers/scan.js')])
 .controller('ContactCtrl', ['$scope', require('./controllers/contact.js')])
 .controller('MenuCtrl', ['$scope', require('./controllers/menu.js')])
