@@ -1,5 +1,46 @@
 <ion-view title="Contact">
-  <ion-content class="padding">
-    contact information....
+  <ion-content ng-controller="MapController" class="padding">
+    <div class="mapWrap">
+        <map center="43.43771774793634,5.424571931362152" zoom="15"> 
+          <!-- ngRepeat: pos in positions -->
+          <marker ng-repeat=" pos in positions" position="{{pos.lat}},{{pos.lng}}"></marker>
+        </map> 
+    </div>
+
+    <div class="row responsive-sm">
+      <div class="col col-33 col-offset-33 logo">
+      		<img src="./img/logo_2.png">
+      </div>
+    </div>
+
+    <div class="row responsive-sm">
+      <div class="col col-33 col-offset-33">
+        
+        <div class="card">
+ 			<div class="item item-text-wrap">
+	    		<ul class="adresse">
+		            <li>
+		              Domaine de la Salle
+		            </li>
+		            <li>
+		            	À l'angle de la rue Auguste Renoir
+		            </li>
+		            <li>
+		            	&
+		            </li>
+		            <li>
+		            	de la rue Pierre Bellot
+		            </li>
+		            <li>
+		            	Bouc Bel Air
+		            </li>
+		            <li>
+		            	<i class="icon ion-ios-telephone"></i>04.42.00.00.00
+		            </li>
+	          	</ul>
+  			</div>
+		</div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
