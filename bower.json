@@ -8,6 +8,7 @@
     "ionicons": "2.0.0",
     "jquery": "2.1.1",
     "lodash": "2.4.1",
+    "ngmap": "1.2.0",
     "restangular": "1.4.0"
   },
   "overrides": {
