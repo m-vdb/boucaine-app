@@ -9,23 +9,6 @@ module.exports = function($scope, $ionicLoading) {
     $scope.map = map;
   });
 
-  $scope.centerOnMe = function () {
-
-    $scope.positions = [];
-    $ionicLoading.show({
-      template: 'Loading...'
-    });
-
-
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      $scope.positions.push({lat: pos.k,lng: pos.B});
-      $scope.map.setCenter(pos);
-      $ionicLoading.hide();
-    });
-
-  };
-
   $scope.gameLocationClicked = function () {
     //pass control to mobile nav system
     AnalyticsTracker.event('gameDetail.gameLocationClicked');
