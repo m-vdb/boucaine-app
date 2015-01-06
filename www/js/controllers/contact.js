@@ -31,10 +31,10 @@ module.exports = function($scope, $ionicLoading) {
     AnalyticsTracker.event('gameDetail.gameLocationClicked');
 
     //default - works on android - http://habaneroconsulting.com/insights/opening-native-map-apps-from-the-mobile-browser#.VDEf6PmSx8E
-    var geoUrl = "geo: " + $scope.positions.Latitude + ", " + $scope.positions.Longitude;
+    var geoUrl = "geo: " + $scope.positions.lat + ", " + $scope.positions.lng;
     if (ionic.Platform.isIOS()) {
     //https://developer.apple.com/library/ios/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html
-      geoUrl = 'maps:ll=' + $scope.positions.Latitude + ", " + $scope.positions.Longitude;
+      geoUrl = 'maps:ll=' + $scope.positions.lat + ", " + $scope.positions.lng;
     }
     window.location = geoUrl;
   }

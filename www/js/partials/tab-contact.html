@@ -3,7 +3,8 @@
     <div class="mapWrap" data-tap-disabled="true">
         <map center="43.43771774793634,5.424571931362152" zoom="15"> 
           <!-- ngRepeat: pos in positions -->
-          <marker ng-repeat=" pos in positions" position="{{pos.lat}},{{pos.lng}}"></marker>
+          <marker ng-repeat="pos in positions" ng-click="gameLocationClicked()" position="{{pos.lat}},{{pos.lng}}">
+          </marker>
         </map> 
     </div>
 
