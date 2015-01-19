@@ -16,5 +16,8 @@
     "shelljs": "^0.3.0",
     "partialify": "^3.1.1",
     "main-bower-files": "^2.1.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install"
   }
 }
