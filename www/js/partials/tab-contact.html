@@ -1,12 +1,5 @@
 <ion-view title="Contact">
   <ion-content class="padding">
-    <div class="mapWrap" data-tap-disabled="true">
-        <map center="43.43771774793634,5.424571931362152" zoom="15"> 
-          <!-- ngRepeat: pos in positions -->
-          <marker ng-repeat="pos in positions" ng-click="gameLocationClicked()" position="{{pos.lat}},{{pos.lng}}">
-          </marker>
-        </map> 
-    </div>
 
     <div class="row responsive-sm">
       <div class="col col-33 col-offset-33 logo">
@@ -43,5 +36,14 @@
 		</div>
       </div>
     </div>
+
+    <div class="mapWrap" data-tap-disabled="true">
+        <map center="43.43771774793634,5.424571931362152" zoom="15"> 
+          <!-- ngRepeat: pos in positions -->
+          <marker ng-repeat="pos in positions" ng-click="gameLocationClicked()" position="{{pos.lat}},{{pos.lng}}">
+          </marker>
+        </map> 
+    </div>
+    
   </ion-content>
 </ion-view>

@@ -1,7 +1,7 @@
 module.exports = function ($scope) {
   $scope.monthPizza = {
     title: '4 Fromages',
-    recipe: 'Crème, roquefort, chèvre, mozarella, râpée',
+    recipe: 'Crème, roquefort, chèvre, mozzarella, fromage râpé',
     price: 9
   };
 
@@ -10,49 +10,54 @@ module.exports = function ($scope) {
       title: 'La Pizza du Mois',
       items: [
         {
-          title: '4 Fromages',
-          recipe: 'Crème, roquefort, chèvre, mozarella, râpée',
-          price: 9
+          title: '',
+          recipe: 'Veuillez demander au camion',
+          price: 
         }
       ]
     },
     {
-      title: 'Les Classics',
+      title: 'Les Classiques',
       items: [
         {
           title: "Fromage",
           recipe: "Sauce tomate, fromage râpé, olives",
-          price: 8
+          price: 8.5
         },
         {
           title: "Anchois",
-          recipe: "Sauce tomate, anchois, olive",
+          recipe: "Sauce tomate, anchois, olives",
           price: 8
         },
         {
           title: "Jambon",
-          recipe: "Sauce tomate, jambon, fromage râpé",
-          price: 9
+          recipe: "Sauce tomate, jambon, fromage râpé, olives",
+          price: 9.5
         },
         {
           title: "Mozzarella",
-          recipe: "Sauce tomate, mozzarella, avec ou sans fromage",
-          price: 9
+          recipe: "Sauce tomate, mozzarella, avec ou sans fromage râpé, olives",
+          price: 9.5
         },
         {
           title: "4 Fromages",
-          recipe: "Sauce tomate, roquefort, chèvre, mozzarella, fromage râpé",
-          price: 10
+          recipe: "Sauce tomate, roquefort, chèvre, mozzarella, fromage râpé, olives",
+          price: 11
         },
         {
           title: "Figatelli",
-          recipe: "Sauce tomate, figatelli râpé",
-          price: 8
+          recipe: "Sauce tomate, figatelli, fromage râpé, olives",
+          price: 11
         },
         {
           title: "Chèvre",
-          recipe: "Sauce tomate, chèvre râpé",
-          price: 8
+          recipe: "Sauce tomate, chèvre, fromage râpé, olives",
+          price: 11
+        },
+        {
+          title: "Royale",
+          recipe: "Sauce tomate, jambon, champignons, fromage râpé, olives noires",
+          price: 11
         }
       ]
     },
@@ -61,32 +66,27 @@ module.exports = function ($scope) {
       items: [
         {
           title: "4 Fromages",
-          recipe: "Crème, roquefort, chèvre, mozarella, râpée",
-          price: 9
+          recipe: "Crème fraîche, roquefort, chèvre, mozzarella, fromage râpé, olives",
+          price: 11
         },
         {
           title: "Fermière",
-          recipe: "Oignons, lardons, crème fraîche",
-          price: 9
-        },
-        {
-          title: "Montagnarde",
-          recipe: "Crème",
-          price: 10
+          recipe: "Oignons, lardons, crème fraîche, fromage râpé, olives",
+          price: 10.5
         },
         {
           title: "Corse",
-          recipe: "Crème, figatelli, brousse",
+          recipe: "Crème fraîche, figatelli, brousse, fromage râpé, olives",
           price: 11
         },
         {
           title: "Tartiflette",
-          recipe: "Crème, pommes de terre, oignons, lardons, reblochon",
+          recipe: "Crème fraîche, pommes de terre, oignons, lardons, reblochon, fromage râpé, olives",
           price: 11
         },
         {
           title: "Saumon fumé",
-          recipe: "Crème, saumon fumé, fromage, aneth",
+          recipe: "Crème fraîche, saumon fumé, fromage râpé, aneth, olives",
           price: 11
         }
       ]
@@ -96,43 +96,48 @@ module.exports = function ($scope) {
       items: [
         {
           title: "La boucaine",
-          recipe: "Tomates cerise confites, roquette",
-          price: 11
+          recipe: "Après cuisson : Tomates cerise confites, roquette, burrata, olives, huile d'olive",
+          price: 12.5
         },
         {
           title: "Pissaladière",
-          recipe: "Oignons confits, anchois",
+          recipe: "Oignons confits, anchois, olives",
           price: 11
         },
         {
           title: "Arménienne",
-          recipe: "Viande hachée, oignons, poivrons, menthe",
+          recipe: "Sauce tomate, viande hachée, oignons, poivrons, menthe, olives",
           price: 11
         },
         {
           title: "Orientale",
-          recipe: "Sauce tomate, merguez, oignons, poivrons, fromage",
+          recipe: "Sauce tomate, merguez, oignons, poivrons, fromage râpé, olives",
           price: 11
         },
         {
           title: "Kebbab",
-          recipe: "Kebbab, oignons, poivrons, fromage",
+          recipe: "Sauce tomate ou crème fraîche, kebbab, oignons, poivrons, fromage râpé, olives",
           price: 11
         },
         {
           title: "Chèvre miel",
-          recipe: "Sauce tomate, chèvre, miel, fromage",
+          recipe: "Sauce tomate, chèvre, miel, fromage râpé, olives",
           price: 11
         },
         {
           title: "Thon-câpres",
-          recipe: "Sauce tomate ou crème, thon, câpre",
+          recipe: "Sauce tomate ou crème fraîche, thon, câpres, fromage râpé, olives",
           price: 11
         },
         {
           title: "Provençale",
-          recipe: "Tomates fraîches, mozzarella, anchois, basilic",
-          price: 11
+          recipe: "Tomates fraîches, mozzarella, anchois, basilic, olives",
+          price: 11.5
+        },
+        {
+          title: "A la Scarole",
+          recipe: "Scarole, anchois, olives noires, huile d'olive",
+          price: 14
         }
       ]
     },
@@ -147,15 +152,15 @@ module.exports = function ($scope) {
           }
         },
         {
-          title: "Chausson Nutella-Banane",
-          price: 6,
+          title: "Panacotta à la vanille ou chocolat",
+          price: 5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Pizza gourmande (4 personnes)",
-          price: 8,
+          title: "Panettone aux raisins secs ou chocolat",
+          price: 5.5,
           css: {
             price: "item-note-1"
           }
@@ -166,43 +171,50 @@ module.exports = function ($scope) {
       title: 'Nos Boissons',
       items: [
         {
-          title: "Coca-Cola",
+          title: "Coca-Cola (1.5 L)",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Orangina",
+          title: "Orangina (1.5 L)",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Fanta",
+          title: "Fanta (1.5 L)",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "San Pelldgrino",
-          price: 3,
+          title: "San Pelldgrino (1.5 L)",
+          price: 1.5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Perrier",
-          price: 3,
+          title: "Perrier (1.5 L)",
+          price: 1.5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Vin Rouge & Rosé",
-          price: 10,
+          title: "Vin Rouge & Rosé (75 cl)",
+          price: 6.5,
+          css: {
+            price: "item-note-1"
+          }
+        },
+        {
+          title: "Jus de fruits artisanal (1 L)",
+          price: 6.5,
           css: {
             price: "item-note-1"
           }
