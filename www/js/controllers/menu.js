@@ -10,9 +10,9 @@ module.exports = function ($scope) {
       title: 'La Pizza du Mois',
       items: [
         {
-          title: '',
-          recipe: 'Veuillez demander au camion',
-          price: 
+          title: 'Veuillez demander au camion',
+          recipe: '',
+
         }
       ]
     },
@@ -171,49 +171,49 @@ module.exports = function ($scope) {
       title: 'Nos Boissons',
       items: [
         {
-          title: "Coca-Cola (1.5 L)",
+          title: "Coca-Cola - 1.5 L",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Orangina (1.5 L)",
+          title: "Orangina - 1.5 L",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Fanta (1.5 L)",
+          title: "Fanta - 1.5 L",
           price: 3,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "San Pelldgrino (1.5 L)",
+          title: "San Pelldgrino - 1.5 L",
           price: 1.5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Perrier (1.5 L)",
+          title: "Perrier - 1.5 L",
           price: 1.5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Vin Rouge & Rosé (75 cl)",
+          title: "Vin Rouge & Rosé - 75 cl",
           price: 6.5,
           css: {
             price: "item-note-1"
           }
         },
         {
-          title: "Jus de fruits artisanal (1 L)",
+          title: "Jus de fruits artisanal - 1 L",
           price: 6.5,
           css: {
             price: "item-note-1"
