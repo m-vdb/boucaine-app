@@ -12,6 +12,10 @@ module.exports = function ($scope) {
         {
           title: 'Veuillez demander au camion',
           recipe: '',
+          price: 0,
+          css: {
+            price: "item-note-month-pizza"
+          }
 
         }
       ]
