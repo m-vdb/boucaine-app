@@ -2,11 +2,11 @@
 <widget id="com.ionicframework.app776055" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>app</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+    An Ionic Framework and Cordova project.
+  </description>
+  <author email="pizza.la.boucaine@gmail.com" href="http://boucaine-adm.herokuapp.com/support">
+    Pizza La Boucaine
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
