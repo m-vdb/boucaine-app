@@ -100,7 +100,7 @@ module.exports = function ($scope) {
       items: [
         {
           title: "La boucaine",
-          recipe: "Après cuisson : Tomates cerise confites, roquette, burrata, olives, huile d'olive",
+          recipe: "Après cuisson : Tomates cerises confites, roquette, burrata, olives, huile d'olive",
           price: 12.5
         },
         {
@@ -196,7 +196,7 @@ module.exports = function ($scope) {
           }
         },
         {
-          title: "San Pelldgrino - 1.5 L",
+          title: "San Pellegrino - 1.5 L",
           price: 1.5,
           css: {
             price: "item-note-1"
