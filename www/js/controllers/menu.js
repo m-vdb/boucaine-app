@@ -226,4 +226,22 @@ module.exports = function ($scope) {
       ]
     },
   ];
+  $scope.menus = [
+    {
+      title: "Menu Enfant",
+      desc: "1 boisson - 33cl <br/> + 1 petite pizza au choix <br/> + 1 surprise",
+      price: 6,
+      css: {
+        card: "menu-enfant"
+      }
+    },
+    {
+      title: "Tous les Mercredis",
+      desc: "Poulet fermier rôti au feu de bois <br/> avec ses pommes de terre",
+      price: 14,
+      css: {
+        card: "menu-poulet"
+      }
+    }
+  ];
 };
