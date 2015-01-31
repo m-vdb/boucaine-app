@@ -10,7 +10,7 @@ module.exports = function ($scope) {
       title: 'La Pizza du Mois',
       items: [
         {
-          title: 'Veuillez demander au camion',
+          title: 'Précisions sur place ou par téléphone',
           recipe: '',
           price: 0,
           css: {
@@ -124,7 +124,7 @@ module.exports = function ($scope) {
           price: 11
         },
         {
-          title: "Chèvre miel",
+          title: "Chèvre-miel",
           recipe: "Sauce tomate, chèvre, miel, fromage râpé, olives",
           price: 11
         },
@@ -139,7 +139,7 @@ module.exports = function ($scope) {
           price: 11.5
         },
         {
-          title: "A la Scarole",
+          title: "Scarole",
           recipe: "Scarole, anchois, olives noires, huile d'olive",
           price: 14
         }
@@ -163,7 +163,7 @@ module.exports = function ($scope) {
           }
         },
         {
-          title: "Panettone aux raisins secs ou chocolat",
+          title: "Panettone raisins secs ou chocolat",
           price: 5.5,
           css: {
             price: "item-note-1"
@@ -238,7 +238,7 @@ module.exports = function ($scope) {
     {
       title: "Tous les Mercredis",
       desc: "Poulet fermier rôti au feu de bois <br/> avec ses pommes de terre",
-      price: 14,
+      price: 14,c
       css: {
         card: "menu-poulet"
       }
