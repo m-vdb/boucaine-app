@@ -23,7 +23,7 @@
 		            	<i class="icon ion-ios-telephone"></i> 06.99.28.66.58
 		            </li>
 		            <li>
-		            	Livraison gratuite
+		            	Livraison
 		            </li>
 		            <li>
 		            	7j/7 - 18h à 22h30
@@ -37,7 +37,7 @@
     <div class="mapWrap" data-tap-disabled="true">
         <map center="43.43771774793634,5.424571931362152" zoom="15"> 
           <!-- ngRepeat: pos in positions -->
-          <marker ng-repeat="pos in positions" ng-click="gameLocationClicked()" position="{{pos.lat}},{{pos.lng}}">
+          <marker ng-repeat="pos in positions" url="comgooglemaps://?center=43.43771774793634,5.424571931362152" position="{{pos.lat}},{{pos.lng}}">
           </marker>
         </map> 
     </div>
