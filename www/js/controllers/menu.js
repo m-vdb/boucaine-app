@@ -10,7 +10,7 @@ module.exports = function ($scope) {
       title: 'La Pizza du Mois',
       items: [
         {
-          title: 'Veuillez demander au camion',
+          title: 'Précisions sur place ou par téléphone',
           recipe: '',
           price: 0,
           css: {
@@ -100,7 +100,7 @@ module.exports = function ($scope) {
       items: [
         {
           title: "La boucaine",
-          recipe: "Après cuisson : Tomates cerise confites, roquette, burrata, olives, huile d'olive",
+          recipe: "Après cuisson : Tomates cerises confites, roquette, burrata, olives, huile d'olive",
           price: 12.5
         },
         {
@@ -124,7 +124,7 @@ module.exports = function ($scope) {
           price: 11
         },
         {
-          title: "Chèvre miel",
+          title: "Chèvre-miel",
           recipe: "Sauce tomate, chèvre, miel, fromage râpé, olives",
           price: 11
         },
@@ -139,7 +139,7 @@ module.exports = function ($scope) {
           price: 11.5
         },
         {
-          title: "A la Scarole",
+          title: "Scarole",
           recipe: "Scarole, anchois, olives noires, huile d'olive",
           price: 14
         }
@@ -163,7 +163,7 @@ module.exports = function ($scope) {
           }
         },
         {
-          title: "Panettone aux raisins secs ou chocolat",
+          title: "Panettone raisins secs ou chocolat",
           price: 5.5,
           css: {
             price: "item-note-1"
@@ -196,7 +196,7 @@ module.exports = function ($scope) {
           }
         },
         {
-          title: "San Pelldgrino - 1.5 L",
+          title: "San Pellegrino - 1.5 L",
           price: 1.5,
           css: {
             price: "item-note-1"
@@ -225,5 +225,23 @@ module.exports = function ($scope) {
         }
       ]
     },
+  ];
+  $scope.menus = [
+    {
+      title: "Menu Enfant",
+      desc: "1 boisson - 33cl <br/> + 1 petite pizza au choix <br/> + 1 surprise",
+      price: 6,
+      css: {
+        card: "menu-enfant"
+      }
+    },
+    {
+      title: "Tous les Mercredis",
+      desc: "Poulet fermier rôti au feu de bois <br/> avec ses pommes de terre",
+      price: 14,c
+      css: {
+        card: "menu-poulet"
+      }
+    }
   ];
 };
