@@ -238,7 +238,7 @@ module.exports = function ($scope) {
     {
       title: "Tous les Mercredis",
       desc: "Poulet fermier rôti au feu de bois <br/> avec ses pommes de terre",
-      price: 14,c
+      price: 14,
       css: {
         card: "menu-poulet"
       }
